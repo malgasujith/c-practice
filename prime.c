@@ -9,7 +9,7 @@ int main(){
         printf("it is not a prime%d",n);
         return 0;
     }
-    while(n <= n/2){
+    while(i <= n/2){
         if (n%i == 0){
             is_prime = false;
             break;
