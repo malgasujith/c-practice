@@ -1,4 +1,5 @@
 cc =gcc
+# useigng automatic variable 
 
 output: test.o
         $(cc) $< -lm -o $@
@@ -7,6 +8,7 @@ test.o:test.c
 clean:
          rm -f  *.o $@
 
+# basic  c programimg
 
 output: test.o
         gcc test.o -lm -o output
@@ -16,7 +18,7 @@ clean:
          rm -f  *.o output
 
 
-
+#  useing  automatic variables and cflags 
 CC = gcc
 CFLAGS = -Wall -g
 LFLAGS = -lm
